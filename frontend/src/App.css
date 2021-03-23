@@ -1,0 +1,2030 @@
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+:root {
+    --color-primario: #FF2A2A;
+    --azul-claro: #0FA2FF;
+    --azul-oscuro: #1475B3;
+    --amarillo: #FFFC42;
+    --rojo-oscuro: #B30B0B;
+}
+
+.centerCenterRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerCenterColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerVerticalRow {
+    display: flex;
+    justify-content: center;
+}
+
+.centerVerticalColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spaceAround {
+    display: flex;
+    justify-content: space-around;
+}
+
+.spaceEvenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ------ HEADER ------- */
+
+#headerContainer {
+    height: 18vh;
+    width: 100%;
+    border-bottom: 3px solid var(--color-primario);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    height: 12vh;
+    width: 25vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 2vw;
+}
+
+.headerInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.headerInput input {
+    height: 5vh;
+    width: 100%;
+    padding-left: 1vw;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    border: 2px solid var(--color-primario);
+}
+
+.searchButton {
+    background-color: var(--color-primario);
+    height: 5vh;
+    width: 5vh;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(--color-primario);
+}
+
+.headerUser {
+    height: 12vh;
+    width: 100%;
+    margin-right: 2vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#userImg {
+    width: 7vh;
+    height: 7vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 200px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.459);
+}
+
+.heart {
+    font-size: 1.5rem;
+}
+
+.cart {
+    color: white;
+    background-color: var(--color-primario);
+    padding: 0.5vh;
+    border-radius: 1vh;
+    font-size: 2.65rem;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.459);
+    transition: .9s;
+}
+
+.cart:hover {
+    background-color: rgba(0, 0, 0, 0.794);
+    color:  var(--color-primario);
+    transition: .9s;
+}
+
+.headerUserBottom {
+    width: 70%;
+    justify-content: space-around;
+    margin-top: 2vh;
+}
+
+.abrirRegalo {
+    width: 30vw;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 2vw;
+    padding: 0.5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.abrirRegalo a {
+    color: rgb(46, 46, 46);
+}
+
+.abrirRegalo span{
+    font-size: 22px;
+    padding-right: 1vw;
+    position: relative;
+    top: 0.2vh;
+}
+
+.registroHeader {
+    margin-right: 5vh;
+}
+
+.cartAndHeart {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.imgTopUsuario {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxUser {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.iconoCambiarImg {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    background-color: #FF2A2A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    font-size: larger;
+    font: bolder;
+    color: #fff;
+    margin-left: -2.8vw;
+}
+
+.iconoCambiarImg:hover {
+    cursor: pointer;
+    font-size: medium;
+}
+
+.userIconos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 3vw;
+}
+
+.userImagen {
+    /* background-image: url("./assets/no-usuario.png"); */
+    width: 12vh;
+    height: 12vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1000px;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+    transition: 0.3s ease;
+    margin: 0 1vw;
+}
+
+.boxOpcionesUsuario {
+    margin: 5vh auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuOpcionesUsuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    border-bottom: 1px solid rgb(126, 126, 126);
+}
+
+.menuOpcionesUsuario h3 {
+    color: rgb(63, 63, 63);
+    transition: 0.2s ease;
+    margin: 1vh 2vw;
+}
+
+.menuOpcionesUsuario h3:hover {
+    cursor: pointer;
+    color: var(--color-primario);
+    border-bottom: 3px solid var(--color-primario);
+}
+
+.menuOpcionesUsuario h3:active {
+    color: var(--color-primario);
+}
+
+.menuOpcionesUsuarioSecciones {
+    width: 100%;
+    margin: 5vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logOutButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.logOutButton button {
+    border: none;
+    padding: 2vh 3vw;
+    color: white;
+    background-color: var(--color-primario);
+    margin-bottom: 5vh;
+    transition: 0.2s ease;
+    border-radius: 5px;
+}
+
+.logOutButton button:hover, .logOutButton button:active {
+    background-color: var(--rojo-oscuro);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgb(63, 63, 63);
+}
+
+.logOut {
+    padding: 1vh 1vw;
+    margin: 0 1vw;
+    background-color: var(--azul-claro);
+    color: rgb(63, 63, 63) !important;
+}
+
+.userName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userName p, a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+    margin-left: 2vh;
+    transition: .5s;
+}
+.userName p:hover, a:hover{
+    color: var(--color-primario);
+    transition: .5s;
+}
+.userNameeImg {
+    display: flex;
+    flex-direction: column;
+}
+
+.logOutyEdit {
+    display: block;
+    float: left;
+}
+
+.linksUsuario {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 30vh;
+    margin-top: 1.4vh;
+    background-color: white;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.flexRowUsuarios {
+    display: flex;
+    height: 100%;
+    width: 3vw;
+}
+
+.datosUser {
+    margin-left: 5vw;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.losMasRegalados {
+    margin: 0vh 3vw 3vw 3vw;
+    color: rgb(63, 63, 63);
+}
+
+/* ------ PAQUETES HEADER -------- */
+
+.paquetesHeader {
+    text-align: center !important;
+    width: 20vw;
+    margin: 0 auto;
+}
+
+.paquetesHeader h1 {
+    font-size: 1.25rem;
+    width: 20vw;
+    margin: 0 auto;
+}
+
+/*SIGNIN SIGNUP*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 50vh;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.boxUser{
+    height: 15vh;
+}
+
+.boxUserRegistro {
+    width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./assets/fondoLog.jpg");
+}
+
+.formRegistro {
+    width: 100%;
+}
+
+.formRegistro input {
+    width: 80%;
+}
+
+.botones .buttonRegister {
+    padding: 1vh 2vw;
+    margin-bottom: 5vh;
+}
+
+.inputFile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.pLinksEntreCuentas p {
+    font-size: 1rem !important;
+    display: block;
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin-left: 0;
+    color: var(--color-primario);
+}
+
+/* CARRUSEL */
+
+video {
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.botonVideo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px;
+    width: 15vw;
+    border: 2px solid white;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.fotos {
+    width: 20vw;
+    height: 50vw;
+    background-size: cover;
+    background-color: red;
+}
+
+.slick-arrow.slick-next::before, .slick-arrow.slick-prev::before {
+    color: red!important;
+}
+
+.imgCarrusel {
+    width: 95%!important;
+    outline: none;
+}
+
+.imgCarrusel h3 {
+    font-size: 40px;
+    padding: 0 0 20px 10px;
+}
+
+/* ------ PAQUETES ------- */
+
+.packagesMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    padding: 5vh 0;
+}
+
+.filterInput {
+    margin: 2vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.filterInput input, .filterInput select {
+    width: 15vw;
+    height: 5vh;
+    text-align: center;
+    outline: none;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    text-align-last:center
+}
+.filterInput select:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.packagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+
+.packagesInput{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    background-color: white;
+    margin: 2vh 0;
+    padding: 1vh 2vw;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    width: 40%;   
+}
+.packagesInput input{
+    width: 100%;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.package {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 265px;
+    height: 375px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.packageImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 92%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 5px 5px 9px rgb(0 0 0 / 30%);
+}
+
+.packageCategoryContainer {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+    color: #ff6c5f;
+}
+
+.packageCategoryContainer {
+    justify-content: space-between;
+    height: 44%;
+    color: #ff6c5f;
+}
+
+.categoryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 12px 14px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.giftBoxImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 20px 25px 0;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+}
+.giftBoxImage p {
+  color:rgba(255, 255, 255, .5);
+  font-size: 12px;
+}
+
+
+.packageDataContainer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 35%;
+    background-color: white;
+    box-shadow: 5px 5px 9px rgb(0 0 0 / 30%);
+}
+
+.packageData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    height: 86%;
+    margin: 0 14px;
+}
+
+.starsAndAssessment {
+    margin: 8px 0 0 0;
+    display: flex;
+}
+
+.starsAndAssessment p:first-child {
+    width: 30px;
+}
+
+.packageBanner a {
+    margin-left: 5vw;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.packageDescription {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.price {
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.loMasRegalado {
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3);
+    width: 90% !important;
+    outline: none;
+    height: 60vh !important;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+.precioDetalle p {
+    margin: 25px 0 0 10px;
+}
+
+.precio {
+    font-size: 1.8rem !important;
+    font-weight: 600;
+    padding: 1vw
+}
+
+/* ------ FOOTER ------- */
+.footer p:hover {
+    color:red;
+}
+.footer {
+    border-top: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin: auto;
+    background-color: #FBFBFB;
+}
+
+.footerArriba {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.footerArribaItem {
+    display: flex;
+    align-items: center;
+    color: rgb(63, 63, 63);
+}
+
+.footerArribaItem p {
+    margin-left: 0.75rem;
+    font-size: 1.15rem;
+}
+
+.fraseFooter {
+    width: 20%;
+    font-size: 1.5rem;
+    color: rgb(63, 63, 63);
+}
+
+.fraseFooterColor {
+    color: var(--color-primario)
+}
+
+.footerMedio {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.seccionesMedioFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccionesMedioFooter p {
+    color: rgb(143, 143, 143);
+    margin: 0.25rem 0;
+}
+
+.seccionesMedioFooterPadre {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.regalosFooter {
+    margin-bottom: 5vh;
+    color: rgb(63, 63, 63);
+}
+
+.footerAbajo {
+    display: flex;
+    margin: 5vh 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    border-top: 2px solid #ccc;
+    padding-top: 3vh;
+}
+
+.footerAbajo p {
+    color: rgb(63, 63, 63);
+}
+
+.devolverCompraButton {
+    background-color: var(--color-primario);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.devolverCompraButton p {
+    color: white;
+}
+
+.partnersButton {
+    background-color: #ccc;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.partnersButton p {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.redesFooter {
+    font-size: 1.75rem;
+}
+
+.iconoFooter {
+    margin-right: 1rem;
+    color: rgb(63, 63, 63);
+}
+
+.iconoFooterArriba {
+    font-size: 1.75rem;
+}
+
+/* ------- PAQUETES -------- */
+
+.contenedorPaquetes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48vh;
+    width: 100%;
+}
+
+.headerTituloPaquetes {
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+    margin: 0 auto;
+}
+
+.linksPaquetes {
+    color: black;
+    background-color: white;
+    padding: 1vh 2vw;
+    transition: 0.1s ease;
+}
+
+.linksPaquetes p, a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.linksPaquetes:hover {
+    color: red;
+}
+
+.paquetesPadres {
+    border: none;
+    border-bottom: 1px solid rgb(161, 161, 161);
+    padding: 2vh 1vw;
+    background-color: white;
+    text-align: start;
+    transition: 0.2s ease;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.paquetesPadres a {
+    color: rgb(63, 63, 63);
+}
+
+.paquetesPadres:hover {
+    border-left: 4px solid var(--color-primario);
+}
+
+.paquetes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    flex-direction: column;
+}
+
+.linksPaquetesPadre {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 40vw;
+    height: 100%;
+    background-color: white;
+}
+
+.linksPaquetesPadre a:hover {
+    color: red;
+}
+
+.flexRowPaquetes {
+    display: flex;
+    width: 60vw;
+}
+
+.fotoperfil {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+}
+
+/* ------ EDITAR USUARIO ------ */
+
+.userImg{
+    width: 14vh !important;
+    height: 14vh !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.editUsuario {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2vh 0;
+}
+
+.modificarEmailUsuario, .cambiarPassword {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 2vh 0;
+}
+
+.modificarEmailUsuario h1 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 2vh;
+    color: rgb(63, 63, 63);
+}
+
+.modificarEmailUsuario input, .cambiarPassword input {
+    margin: 2vh 0;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modificarEmailUsuario button {
+    padding: 1vh 0;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--rojo-oscuro);
+    color: white;
+    border: none;
+    transition: 0.2s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modificarEmailUsuario button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+
+.modificarEmailUsuario button:active {
+    background-color: var(--color-primario);
+}
+
+.cambiarPassword p, .modificarEmailUsuario p {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+.lineaHamburguesa {
+    width: 50vw;
+    height: 1vh;
+    border-bottom: 1px solid rgba(87, 87, 87, 0.26);
+    margin-left: 2vw;
+}
+.guardaCambioContraseña {
+    background-color: var(--azul-claro);
+    color: white;
+    padding: 2vh 3vw;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 2vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease;
+}
+
+.guardaCambioContraseña:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.guardaCambioContraseña:active {
+    background-color: var(--azul-oscuro);
+}
+
+/* CARRITO */
+
+.carrito {
+    width: 100%;
+    background-color: #fff;
+}
+
+.carritoHead {
+    height: 20vh;
+    padding-left: 10vw;
+    display: flex;
+    align-items: center;
+    background-repeat: repeat-x;
+    box-shadow: 1px 2px 7px 2px rgb(0 0 0 / 8%);
+    -webkit-box-shadow: 1px 2px 7px 2px rgb(0 0 0 / 8%);
+}
+
+.carritoSection {
+    height: auto;
+    padding: 4vh 5vw;
+    display: flex;
+}
+
+.carritoPaquetes {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carritoPaquete {
+    width: 80%;
+    height: 25vh;
+    margin-bottom: 6vh;
+}
+
+.carritoPaqueteNombre {
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 30%;
+    justify-content: space-between;
+    padding: 1vh 1vw;
+    background-size: cover;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.carritoPaqueteContenido {
+    display: flex;
+    background-color: #ff66341c;
+    height: 80%;
+    box-shadow: 1px 2px 7px 2px rgb(0 0 0 / 8%);
+    -webkit-box-shadow: 1px 2px 7px 2px rgb(0 0 0 / 8%);
+}
+
+#carritoImagen, #carritoCantidad {
+    width: 25%;
+    padding: 1vh 1vw;
+}
+
+#carritoDescripcion {
+    padding: 2vh 0.5vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#carritoCantidad {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2rem;
+}
+
+#carritoCantidad1 {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#carritoCantidad1 h5 {
+    margin: 0;
+}
+
+.buttonCarrito {
+    outline: none;
+    transition: background-color .3s;
+    border: 0;
+    border-radius: 3px;
+    width: 2vw;
+    height: 3.5vh;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6c5f;
+}
+
+.buttonCarrito:hover {
+    background-color: #f88a80;
+}
+
+.carritoImagen {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carritoResumen {
+    width: 40%;
+    height: 55vh;
+    padding: 0vh 5vw;
+    background-color: #ff66341c;
+    border-radius: 1vh;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.13);
+}
+
+#resumenTitulo {
+    border-bottom: 2px solid #f0cdcdb0;
+    height: 8vh;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+#resumenPaquetes {
+    height: 6vh;
+    border-bottom: 2px solid #f0cdcdb0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#resumenTotal {
+    display: flex;
+    border-bottom: 2px solid #f0cdcdb0;
+    height: 6vh;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    color: #2e93e5;
+}
+
+#resumenContinuarYseguir {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    padding: 2vh 3vw;
+    justify-content: space-between;
+}
+
+#carritoContinuar {
+    height: 7vh;
+    background-color: #ff6c5f;
+    color: #fff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carritoContinuar:hover {
+    background-color: #ff6c5fde;
+}
+
+#carritoSeguirComprando {
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff6c5f;
+}
+
+#carritoSeguirComprando:hover {
+    color: #ff6c5fbb;
+}
+
+#progresoCompra {
+    width: 80%;
+    padding-left: 3vw;
+}
+
+/* ENVIO */
+
+#metodoDeEnvio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.metodoDeEnvio1 {
+    width: 50%;
+    height: 9vh;
+    padding: 1vh 1vw;
+}
+
+.tipoEnvio {
+    border: solid 1px red!important;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#inputsEnvio label {
+    display: flex;
+    font-size: 1.4rem;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: red;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.inputMensajes {
+    height: 40vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+.inputMensajes input, .inputMensajes textarea {
+    width: 80%!important;
+    padding: 1vh 1vw;
+}
+
+.inputMensajes input {
+    height: 10%;
+    font-size: 1rem;
+}
+
+.inputMensajes textarea {
+    height: 35%;
+    font-size: 1.3rem;
+}
+
+
+
+/* --------- ADMIN --------- */
+.adminContainer{
+    margin: 3vh 0;
+    margin-top: 0;
+}
+.adminContainer h1{
+    color: white;
+}
+.menuDeCarga{
+    width: 100%;
+    
+}
+.cargaContent{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+}
+.adminCargaFormContainer{
+    width: 40%;
+    
+}
+.adminCargaForm{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 0vh 0;
+    width: 100%;
+}
+.adminCargaForm input{
+    margin: 2vh 0;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border: none;
+}
+.adminCargaForm select{
+    margin: 2vh 0;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border: none;
+}
+.adminCargaForm textarea{
+    margin: 2vh 0;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    resize: vertical;
+    border:none;
+}
+.adminCargaForm button{
+    padding: 1vh 2vw;
+    color: white;
+    background-color: var(--azul-claro);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    transition: 0.2s ease;
+    border: none;
+}
+.adminCargaForm button:hover{
+    transform: scale(1.05);
+    background-color: var(--azul-oscuro);
+}
+.cargaContentButton{
+    cursor: pointer;
+    background-color: var(--color-primario);
+    padding: 1vh 2vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(126, 126, 126);
+    margin: 5vh 0;
+    width: fit-content;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}   
+.cargaContentButton h3{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-right: 1vw;
+}
+
+
+
+/* Paquetes Header Nuevo */
+
+.paquetesContainer {
+    display: flex;
+    margin-top: 2vh;
+    position: absolute;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.paquetesTituloH {
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+
+
+.categoriasContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    margin-left: 8vw;  
+}
+.botonCategoria,.categoriaPaquete  {
+    cursor: pointer;
+    min-width: 12vw;
+    border: none;
+    border-bottom: 1px solid rgb(161, 161, 161);
+    padding: 2vh 1vw;
+    background-color: rgb(255, 255, 255);
+    text-align: start;
+    transition: 0.2s ease;
+    font-size: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.botonCategoria span {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+}
+.botonCategoria:hover {
+    border-left: 4px solid var(--color-primario);
+}
+.categoriaPaquete:hover {
+    border-left: 4px solid var(--color-primario);
+    color: tomato;
+}
+
+
+.row {
+    display: flex;
+    position: absolute;
+    margin-top: 2vh;
+}
+
+.paquetexCategoria {
+    margin-top: 4vh;
+    min-width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+/* ------- REAGALO ---------- */
+.regaloPadre{
+    width: 100%;
+    padding: 5vh;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.regalo{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.regalo input{
+    padding: 1vh 2vw;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    transition: 0.2s ease;
+    border: none;  
+    width: 50%;
+}
+.regalo h1{
+    color:rgb(63, 63, 63);
+    margin-bottom: 3vh;
+}
+.regalo button, .regaloItemPadre button{
+    margin-top: 2vh;
+    padding: 1vh 2vw;
+    color: white;
+    background-color: var(--azul-claro);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    transition: 0.2s ease;
+    border: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+    width: 50%;
+}
+.regalo button:hover, .regalo a button:active{
+    transform: scale(1.05);
+    background-color: var(--azul-oscuro);
+}
+
+.regaloItemPadre{
+    width: 100%;
+    display: flex;
+    align-items: center;    
+}
+.regaloItem{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 20vh;
+    margin: 2vh 0;
+}
+.regaloItemPadre h3{
+    margin-left: 2vw;
+}
+.regaloItemPadre p{
+    margin: 0 2vw;
+}
+.regaloItemPadre button{
+    text-align: center;
+    padding: 1vh 2vw;
+    color: white;
+    background-color: var(--azul-claro);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    transition: 0.2s ease;
+    border: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+    width: 50%;
+}
+.regaloBoton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 2vw;
+    color: white;
+    background-color: var(--azul-claro);
+    margin-left: 2vw;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+.regaloBoton:hover .regaloBoton:active{
+    transform: scale(1.05);
+    background-color: var(--azul-oscuro);
+}
+.regaloItemPadre a{
+    margin: 0 !important;
+}
+.regaloItem a{
+    margin: 0 !important
+}
+.regaloBoton a{
+    color: white;
+    margin: 0 !important;
+}
+.regaloItemPadre a{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 40% !important;
+}
+.regaloBoton{
+    margin: 0 !important;
+    padding: 1vh 0;
+}
+.regaloLink{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* -------- RECUPERAR CONTRASEÑA -------- */
+
+
+.containerRegister{
+    display: flex;
+    margin: 5vh auto;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    color: black;
+}
+.containerRegister h2{
+    margin-bottom: 5vh;
+    font-size: 2rem;
+}
+.containerRegister input {
+    padding: 1vh 2vw;
+    color: rgb(63, 63, 63) !important;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    transition: 0.2s ease;
+    border: none;  
+    width: 100%;
+}
+.containerRegister button {
+    border: none;
+    padding: 2vh 3vw;
+    color: white;
+    background-color: var(--azul-claro);
+    margin-bottom: 5vh;
+    transition: 0.2s ease;
+    border-radius: 5px;
+    margin-top: 3vh;
+    width: 100%;
+}
+.containerRegister button:hover, .containerRegister button:active{
+    transform: scale(1.05);
+    background-color: var(--azul-oscuro);
+}
+
+
+/* ------- MEDIA QUERIES ------ */
+
+@media (max-width:900px) {
+    /* ----- HEADER RESPONSIVE ------ */
+    .headerUser{
+        display: flex !;
+        justify-content: flex-end !important;
+        align-items: flex-end;
+        margin: 2vh 0;
+    }
+    .datosUser{
+        width: 100%;
+    }
+    .cart{
+        margin-left: 2vw !important;
+    }
+    .headerContainer {
+        width: 100vw;
+    }
+    .headerResponsive {
+        height: 100%;
+        z-index: 100;
+    }
+    .itemsHeaderResponsive {
+        transition: 0.2s ease;
+        background-color: white;
+        height: 100%;
+        width: 100vw;
+        position: absolute;
+        z-index: 100;
+        justify-content: space-around;
+    }
+    .userHeaderResponsive {
+        display: flex;
+        margin-left: 4vw;
+        align-items: center;
+        width: 100vw;
+    }
+    .userHeaderResponsive p {
+        margin-left: 5vw;
+    }
+    .datosUser {
+        display: none;
+    }
+    .heart {
+        display: none;
+    }
+    .abrirRegalo {
+        display: none;
+    }
+    .paquetesHeader {
+        display: none;
+    }
+    .hamburger-react {
+        margin-right: 5vw;
+        margin-top: 6vh;
+    }
+    .headerContainer {
+        align-items: center;
+    }
+    .headerUserBottom {
+        margin: 0;
+    }
+    .headerInput {
+        width: 100%;
+    }
+    .userNameResponsive {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 5vw;
+        width: 100%;
+    }
+    .userNameResponsive p {
+        margin-left: 5vw;
+    }
+    .userName {
+        display: none;
+    }
+    .linksUsuarioResponsive {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 30vh;
+        margin-top: 2vh;
+    }
+    .linksUsuarioResponsive a {
+        margin-top: 2vh;
+        margin-left: 5vw;
+    }
+    .paquetesHeader{
+        display: none !important;
+    }
+    /* ------- FOOTER ------- */
+    .footer{
+        width: 100%;
+    }
+    .footerArriba {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 5vw;
+    }
+    .footerArriba span {
+        display: none;
+    }
+    .footerArriba p {
+        margin: 1vh;
+    }
+    .footerMedio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .seccionesMedioFooterPadre {
+        display: none;
+    }
+    .fraseFooter {
+        width: 100%;
+        padding-left: 2vw;
+    }
+    .footerAbajo {
+        flex-direction: column;
+    }
+    .footerAbajo span {
+        display: none;
+    }
+    .footerAbajo p, .devolverCompraButton, .redesFooter {
+        margin: 1vh;
+    }
+    /* ------- HOME ------- */
+    .homeVideo {
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+    .botonesVideoHome {
+        align-items: center;
+        width: 90% !important;
+    }
+    .botonesVideoHome p {
+        width: 50%;
+        margin-right: 1vw;
+        padding: 1vh 1vw;
+    }
+    .tituloHomeVideoPadre {
+        padding-left: 0 !important;
+        width: 90%;
+    }
+    .tituloHomeVideo {
+        width: 100% !important;
+        font-size: 40px !important;
+    }
+    .textoHomeVideo {
+        font-size: 22px !important;
+        margin-top: 2vh;
+    }
+    /* ----- CAROUSEL ----- */
+    .imgCarrusel2 {
+        width: 100% !important;
+        height: 50% !important;
+    }
+    .imgCarruselHijo {
+        height: 50vh !important;
+        width: 100% !important;
+    }
+    
+    .nombreCategoria {
+        font-size: 16px !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+    .containerImg {
+        display: none;
+    }
+    .containerImg2 {
+        margin: 5vh auto !important;
+        width: 85% !important;
+        height: 50vh;
+    }
+    .loMasRegaladoImagenResponsive {
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        height: 30vh !important;
+    }
+    .precioDetalle p {
+        margin: 1vh 2vw !important;
+    }
+    .precio {
+        font-size: 1.75rem !important;
+    }
+    /* ------  LOGIN ----- */
+    .modificarEmailUsuario{
+        width: 60%;
+    }
+
+    /* ------ REGISTRO ------- */
+    .formRegistro input{
+        width: 100%;
+    }
+    .inputFile{
+        width: 100%;
+    }
+    .uploadButton {
+        width: 100%;
+    }
+    .buttonRegister{
+        margin-top: 3vh;
+    }
+/* ------ PAQUETES FILTRO ----- */
+.packagesInput{
+    width: 80%;
+}
+
+/* ---- USUARIO ------ */
+
+.cambiarPassword input{
+    width: 100%;
+}
+.cambiarPassword {
+    width: 100%;
+}
+.modificarEmailUsuario{
+    width: 90%;
+}
+.guardaCambioContraseña{
+    margin: 0 0 !important;
+}
+.editUsuario{
+    margin: 0 0;
+    padding: 0 0;
+    height: 50vh;
+}
+
+/* ------- ADMIN --------- */
+.adminCargaFormContainer{
+    width: 100%;
+}
+.cargaContent, .menuDeCarga {
+    width: 90%;
+}
+.cargaContentButton, .cargaContent input .cargaContent textarea{
+    width: 100%;
+}
+.loMasRegalado {
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3);
+    width: 90% !important;
+    outline: none;
+    height: 52vh !important;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+/* ------ REGALO ------ */
+.regaloItemPadre{
+    display: flex;
+    flex-direction: column !important;
+    width: 100% !important;
+}
+.regaloItem{
+    width: 90vw !important;
+    border-radius: 5px;
+    height: 40vh !important;
+}
+.regaloPadre h3, p, .regaloBoton{
+    margin-bottom: 2vh !important;
+}
+.regaloBoton{
+    width: 60%;
+    padding: 2vh !important;
+    margin: 0 auto !important;
+}
+.regaloBoton:active{
+    background-color: var(--azul-oscuro);
+}
+.regaloPadre{
+    width: 100% !important;
+}
+.regaloItemPadre a{
+    margin: 0 !important;
+}
+
+.regalo input, .regalo button {
+    width: 90% !important;
+}
+.regaloLink{
+    margin: 0 !important;
+}
+/* ------ RESET PASSWORD ------ */
+.containerRegister button, .containerRegister input{
+    width: 90%;
+}
+.datosUser{
+    margin:0 !important;
+}
+.userNav{
+    margin: 0 !important;
+}
+
+}
+
+
+@media (min-width:901px) {
+    
+    
+    .headerResponsive {
+        display: none
+    }
+    .containerImg2 {
+        display: none;
+    }
+    .containerImg {
+        margin: 0 auto;
+    }
+    .itemsHeaderResponsive {
+        display: none;
+    }
+}
+.ojito {
+    margin-top: 1.5vh;
+}
+@media (max-width: 600px){
+    /* ------ USUARIO ------ */
+.boxChicaUsuario{
+    display: flex !important;
+    flex-direction: column !important;
+    height: fit-content;
+}
+.menuOpcionesUsuario{
+    display: flex !important;
+    flex-direction: column !important;
+    height: fit-content;
+    border-bottom: none;
+}
+.menuOpcionesUsuario div {
+    border-bottom: 1px solid rgb(126, 126, 126);
+    width: 100%;
+}
+.carritoSection{
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 1vw;
+}
+.carritoPaquetes{
+    width: 100% !important;
+    height: 50vh !important;
+}
+.carritoPaquete{
+    width: 100%;
+}
+.buttonCarrito{
+    width: 5vw;
+}
+.carritoResumen{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+}
+.carritoImagen{
+    width: 100%;
+    background-position: center;
+}
+.carritoCantidad h5{
+    font-size: 1rem !important;
+}
+.tipoEnvio{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.tipoEnvio p{
+    margin-bottom: 0 !important;
+}
+.carritoHead{
+    justify-content: flex-start;
+    padding:0;
+}
+.filterInput input, .filterInput select{
+        width: 100%;
+    }
+}
+
+/* Paquetes Header Nuevo */
+
+.paquetesContainer {
+    display: flex;
+    margin-top: 2vh;
+    position: absolute;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.paquetesTituloH {
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.paquetesTituloH:hover {
+    color: var(--color-primario);
+    transition: .5s;
+}
+
+.paquetesTituloH span {
+    position: relative;
+    top: 0.5vh;
+}
+
+.categoriasContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    margin-left: 8vw;  
+}
+.botonCategoria,.categoriaPaquete  {
+    cursor: pointer;
+    min-width: 12vw;
+    border: none;
+    border-bottom: 1px solid rgb(161, 161, 161);
+    padding: 2vh 1vw;
+    background-color: rgb(255, 255, 255);
+    text-align: start;
+    transition: 0.2s ease;
+    font-size: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.botonCategoria span {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+}
+.botonCategoria:hover {
+    border-left: 4px solid var(--color-primario);
+}
+.categoriaPaquete:hover {
+    border-left: 4px solid var(--color-primario);
+    color: tomato;
+}
+.row {
+    display: flex;
+    position: absolute;
+    margin-top: 2vh;
+}
+.paquetexCategoria {
+    margin-top: 4vh;
+    min-width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/* -------- HEADER CARRITO -------- */
+
+.cart{
+    align-items: center;
+    justify-content: center;
+}
+.headerResponsive{
+    width: 100%;
+}
+.headerUser{
+    justify-content: center;
+    align-items: center;
+}

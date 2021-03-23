@@ -1,0 +1,518 @@
+/*----Estilos paquete individual ----*/
+
+:root {
+    --color-primario: #FF2A2A;
+    --azul-claro: #0FA2FF;
+    --azul-oscuro: #1475B3;
+    --amarillo: #FFFC42;
+    --rojo-oscuro: #B30B0B;
+}
+
+.paqueteBanner {
+    width: 100%;
+    height: 8vh;
+    background-image: url('https://web-bigbox.storage.googleapis.com:443/uploads/category/a0b78e99-15c9-4795-9a4a-449dec855e38.jpg');
+    display: flex;
+}
+
+.paqueteBanner span:hover {
+    text-decoration: underline;
+}
+
+.paqueteBanner a {
+    margin-left: 2vw;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.paqueteIcono {
+    font-size: 30px;
+    margin-right: 1vw;
+}
+
+.paqueteContainer {
+    padding: 2vw;
+    margin: 2vh auto;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.tituloPaquete {
+    margin-bottom: 1vh;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.746);
+}
+
+.descripcionPaquete {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.paqueteImgInfo {
+    width: 100%;
+    display: flex;
+}
+
+.paqueteImg {
+    margin: 10vh 10vw;
+    width: 25vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.paqueteInfo {
+    padding: 2vw;
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.paqueteInfo div {
+    margin-left: 1vw;
+}
+
+.paqueteInfo h4 {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.842);
+}
+
+.icon {
+    font-size: 30px;
+    color: grey;
+    margin-right: 1vw;
+}
+
+.linea {
+    width: 80%;
+    height: 1vh;
+    border-bottom: 1px solid rgba(87, 87, 87, 0.26);
+}
+
+.formatodeRegalo {
+    display: flex;
+    flex-direction: column;
+}
+
+.formatodeRegalo h5 {
+    font-size: 20px;
+}
+
+.regaloDigital {
+    box-shadow: inset 0 0 8px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    padding: 1vh;
+    background-color: rgba(148, 148, 148, 0.157);
+    text-align: center;
+    width: 30%;
+    margin: 0vh 0 2vh 0vw;
+    color: #ff6c5f;
+    font-weight: 500;
+}
+
+.envioPorEmail {
+    font-size: 15px;
+    color: grey;
+}
+
+.precio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.746);
+}
+
+.precio a {
+    margin-left: 1vw;
+    font-size: 15px;
+    color: #ff6c5f;
+    cursor: pointer;
+}
+
+.comprarPaquete {
+    width: 15vw;
+    height: 5vh;
+    outline: none;
+    border: none;
+    background-color: #ff6c5f;
+    border-radius: 1vh;
+    color: white;
+    font-size: 15px;
+    margin-left: 5rem;
+    cursor: pointer;
+}
+
+.mediosdepago {
+    margin-top: 2vh;
+    width: 100%;
+    height: 6vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://fotos.subefotos.com/cdebe4f6ee622a4687470124d6441a0co.png");
+}
+
+.cantidadDePersonas, .categoria, .ubicacion, .vendidos {
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: 500;
+}
+
+.cantidadDePersonas span, .categoria span, .ubicacion span, .vendidos span {
+    color: #ff6c5f;
+    font-weight: bold;
+}
+
+.valoracionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.198);
+    width: 80%;
+    height: 15vh;
+    border-radius: 1vh;
+    margin: 5vh auto;
+    background-color: rgba(0, 0, 0, 0.068);
+}
+
+.valoracion {
+    display: flex;
+    align-items: center;
+}
+
+.valoracion span {
+    margin-left: 1vw;
+    color: #ffd700;
+    ;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.valoracionContainer img {
+    width: 15vw;
+    margin-right: 1vw;
+}
+
+.productosContainer {
+    margin: 2vh auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.encabezado {
+    padding: 1vh 5vw;
+}
+
+.encabezado h3 {
+    margin-bottom: 2vh;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.746);
+}
+
+.encabezado p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.verComentarios, .encabezado span {
+    color: #ff6c5f;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.stars {
+    outline: none;
+    border: none;
+}
+
+/* ----Productos ----*/
+
+.productos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cardProducto {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh auto;
+    width: 320px;
+    border-radius: 1vh;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.404);
+    transition: .5s;
+}
+
+.cardProducto:hover {
+    transition: .5s;
+    transform: translateY(-20px);
+}
+
+.cardProducto img {
+    border-radius: 1vh 1vh 0 0;
+}
+
+.infoProducto {
+    padding: 1vw 2vw;
+}
+
+.tituloProducto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoProducto h4, h5 {
+    margin-bottom: 2vh;
+}
+
+.infoProducto h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.infoProducto h5 {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.746);
+}
+
+.lugarProducto {
+    font-size: 15px;
+    color: grey;
+}
+
+.iconCard {
+    color: #ff6c5f;
+    font-size: 20px;
+}
+
+#enviar span{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-right: 0.2vw;
+}
+/* Caja de comentarios */
+.sinComentarios {
+    margin-top: 5vh;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sinComentarios h5 {
+    font-size: 30px;
+    color: gray;
+}
+
+.sinComentarios span {
+    color: gray;
+    font-size: 50px;
+    margin-right: 2vw;
+}
+
+
+
+.cajaDeComentarios {
+    margin: 5vh auto;
+    width: 82%;
+    border-radius: 1vh;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.404);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comentarioContainer {
+    margin: 2vh;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 2vw;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.226);
+    border-radius: 1vh;
+}
+
+.tituloComentarios {
+    align-self: flex-start;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.imagenDeUsuario {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: 2vh;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.404);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.infoUsuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nombreDeUsuario {
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.comentario {
+    margin-left: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 48.2vw;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.507);
+}
+#enviar {
+    cursor: pointer;
+}
+.filterInput input {
+    border-radius: 10px 0 0 10px;
+    width: 50vw;
+    height: 5vh;
+    text-align: center;
+    outline: none;
+    margin-bottom: 1.3vh;
+}
+.cajaEditarComentario {
+    display: flex;
+    width: 87.7%;
+    margin-left: 1vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.cajaEditarComentario input {
+    border-radius: 10px;
+    width: 45.2vw;
+    height: 5vh;
+    text-align: center;
+    outline: none;
+    padding: 1vw;
+}
+.borrarYmodificar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 15vh;
+    margin-left: 2vw;
+}
+.cajaDeComentario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+
+.borrarComentario, .editarComentario {
+    font-size: 25px;
+    background-color: tomato;
+    display: flex;
+    padding: 0.5vw;
+    border-radius: 1vh;
+    color: rgb(226, 226, 226);
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.404);
+    transition: .5s;
+}
+
+.borrarComentario:hover, .editarComentario:hover {
+    background-color: rgb(158, 61, 44);
+    color: rgb(195, 195, 195);
+    transition: .5s;
+}
+
+/* ----- RESPONSIVE ------- */
+
+@media (max-width:900px) {
+    .paqueteImgInfo {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+    }
+    /* ------ PAQUETE -------- */
+    .paqueteImg {
+        background-size: cover;
+        height: 50vh !important;
+        width: 100% !important;
+        padding: 0 0 !important;
+        margin: 3vh 0 !important;
+    }
+    .paqueteInfo {
+        width: 100% !important;
+    }
+    .linea {
+        width: 100% !important;
+    }
+    .formatodeRegalo .reagaloDigital {
+        width: 50vw !important;
+        margin: 0 0 !important;
+        padding: 0 0 !important;
+    }
+    .formatodeRegalo {
+        width: 100%;
+    }
+    .comprarPaquete {
+        margin-left: 0 !important;
+        width: 40%;
+        height: fit-content;
+        padding: 1vh 2vw;
+    }
+    .valoracionContainer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 2vh 0;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .valoracion {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .valoracion span {
+        font-size: 2rem;
+    }
+    .react-stars-wrapper-02086383796271407 {
+        height: 5rem;
+    }
+    .cardProducto {
+        width: 300px;
+    }
+    @media(max-width:900px){
+        .imagenDeUsuario{
+            width: 80px;
+            height: 80px;
+        }
+        .cajaDeComentarios{
+            width: 100%;
+        }
+        .cajaDeComentario{
+            width: 100%;
+        }
+        .comentarioContainer{
+            width: 95%;
+        }
+        .comentario{
+            width: 90%;
+        }
+    }
+}

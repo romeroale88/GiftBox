@@ -1,0 +1,59 @@
+
+
+.queEsGbContainer{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen {
+    background-image: url("https://static.bigbox.com.ar/webSsr/build/abrazo.4c0413160a1551d6708a28958bf5cba6.jpg");
+    height: 100%;
+    width: 20vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1;
+    padding-right: 2vw;
+}
+.Info {
+    flex: 3 1;
+    margin-left: 10vw;
+    margin-right: 2vw;
+    margin-top: 5vh;
+    max-height: 100%;
+    overflow:scroll 
+}
+
+.titulo {
+    font-size: 2.5rem;
+    color: rgb(46, 45, 45);
+    margin-bottom: 5vh;
+}
+
+.parrafo {
+    font-size: 1.2rem;
+    color: rgb(46, 45, 45);
+}
+
+.parrafo2 {
+    font-size: 1.4rem;
+    color: rgb(46, 45, 45);
+}
+
+.parrafo p,.parrafo2 p {
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+}
+
+.manifesto {
+    font-size: 2rem;
+    color: rgb(46, 45, 45);
+    margin-bottom: 2vh;
+}
+
+.slogan {
+    font-size: 1.5rem;
+    color: rgb(46, 45, 45);
+}
+
